@@ -1,31 +1,174 @@
-body{
-font-family:Arial;
-background:#eef1f5;
-text-align:center;
+/* ===== GLOBAL RESET ===== */
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, Arial, sans-serif;
 }
 
+body{
+background:#f2f5f9;
+color:#222;
+line-height:1.6;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+background:#0a3d62;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
+
+/* ===== PAGE CONTAINER ===== */
+.container{
+width:90%;
+max-width:1000px;
+margin:40px auto;
+}
+
+/* ===== HEADINGS ===== */
 h1{
-color:#2563eb;
+margin-bottom:15px;
+color:#0a3d62;
 }
 
+h2{
+margin-bottom:10px;
+color:#1e3799;
+}
+
+h3{
+margin-bottom:8px;
+color:#3c6382;
+}
+
+/* ===== CARDS ===== */
+.card{
+background:white;
+padding:25px;
+margin-bottom:25px;
+border-radius:15px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ===== BUTTONS ===== */
+button{
+background:#0a3d62;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:8px;
+cursor:pointer;
+font-size:15px;
+}
+
+button:hover{
+background:#1e3799;
+}
+
+/* ===== LINKS ===== */
 a{
 display:block;
-margin:10px;
+margin:10px 0;
+color:#0a3d62;
 text-decoration:none;
-color:#2563eb;
-font-size:18px;
+font-weight:bold;
+}
+
+a:hover{
+color:#1e3799;
+}
+
+/* ===== BOOK STYLE PAGE ===== */
+.book{
+background:white;
+padding:40px;
+width:90%;
+max-width:600px;
+margin:50px auto;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+text-align:center;
+}
+
+/* ===== LESSON TEXT ===== */
+p{
+margin-bottom:15px;
+font-size:17px;
+}
+
+/* ===== MODULE LIST ===== */
+.module-list a{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+.module-list a:hover{
+transform:scale(1.03);
+transition:0.2s;
+}
+
+/* ===== LOGIN / REGISTER FORMS ===== */
+.form-box{
+background:white;
+padding:35px;
+width:90%;
+max-width:400px;
+margin:60px auto;
+border-radius:15px;
+box-shadow:0 6px 18px rgba(0,0,0,0.15);
+}
+
+input{
+width:100%;
+padding:12px;
+margin:12px 0;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+/* ===== FOOTER ===== */
+footer{
+text-align:center;
+padding:20px;
+margin-top:40px;
+background:#0a3d62;
+color:white;
+}
+
+/* ===== STATUS TEXT ===== */
+#status{
+margin-top:15px;
+font-weight:bold;
+color:green;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:600px){
+
+.book{
+padding:25px;
+}
+
+nav{
+font-size:14px;
 }
 
 button{
-padding:12px 25px;
-background:#2563eb;
-color:white;
-border:none;
-border-radius:8px;
-cursor:pointer;
+width:100%;
 }
 
-.center{
-margin-top:150px;
 }
