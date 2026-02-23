@@ -172,4 +172,56 @@ width:100%;
 }
 
 }
+/* BOOK PAGE */
+.book-page{
+background:white;
+padding:40px;
+max-width:700px;
+margin:50px auto;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+animation:flip 0.5s ease;
+}
+
+@keyframes flip{
+from{transform:rotateY(90deg);opacity:0;}
+to{transform:rotateY(0);opacity:1;}
+}
+
+/* NAV BUTTONS */
+.nav-btns{
+display:flex;
+justify-content:space-between;
+margin-top:30px;
+}
+
+.nav-btns button{
+width:45%;
+}
+
+/* PROGRESS BAR */
+.progress{
+background:#ddd;
+height:20px;
+border-radius:20px;
+overflow:hidden;
+margin:20px 0;
+}
+
+.progress-bar{
+height:100%;
+background:#27ae60;
+width:0%;
+transition:0.4s;
+}
+
+/* QUIZ */
+.quiz{
+text-align:left;
+margin-top:20px;
+}
+
+.quiz button{
+margin-top:10px;
+}
 
