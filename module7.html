@@ -3,22 +3,56 @@
 <head>
 <title>Module 7</title>
 <link rel="stylesheet" href="../style.css">
+<script src="../script.js"></script>
 </head>
 <body>
 
-<div class="book">
-<h1>Module 7</h1>
-<h2>Project + Career Skills</h2>
+<div class="book-page">
 
-<h3>Contents</h3>
+<h1>Module 7 — Career Skills</h1>
 
-<a href="#">Unit 1 — Portfolio</a>
-<a href="#">Unit 2 — Freelancing</a>
-<a href="#">Unit 3 — Job Skills</a>
-
-<br>
-<a href="../lessons.html">⬅ Back</a>
+<div class="progress">
+<div class="progress-bar" id="bar"></div>
 </div>
+<p id="percent">0%</p>
+
+<div id="content"></div>
+
+<div class="nav-btns">
+<button onclick="prevPage(pages)">⬅ Previous</button>
+<button onclick="nextPage(pages)">Next ➡</button>
+</div>
+
+</div>
+
+<script>
+
+let pages=[
+
+`<h2>Introduction</h2>
+<p>A computer is an electronic machine that processes data.</p>`,
+
+`<h2>Hardware</h2>
+<p>Hardware includes keyboard, mouse, monitor and CPU.</p>`,
+
+`<h2>Software</h2>
+<p>Software are programs that tell hardware what to do.</p>`,
+
+`<h2>Quiz</h2>
+<div class="quiz">
+<p>Computer is?</p>
+
+<button onclick="checkAnswer(true)">Electronic machine</button>
+<button onclick="checkAnswer(false)">Food</button>
+
+<p id="result"></p>
+</div>`
+
+];
+
+showPage(pages);
+
+</script>
 
 </body>
 </html>
